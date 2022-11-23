@@ -110,6 +110,7 @@ async def on_get_sputnik_rating(command):
     result = get_matching_a(artist_name, album_title)
              
     if result != None:
+        # TODO: Should probably be printing out the SPUTNIK ARTIST/ALBUM name instead of the YT name.... this is a sputnik bot
        await send_in_codeblock(command, str(result)) 
     else:
         print(f'Not Found {artist_name} - "{album_title}"')  
